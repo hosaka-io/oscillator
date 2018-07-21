@@ -1,6 +1,6 @@
 (defproject io.hosaka/oscillator "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/hosaka-io/oscillator"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :repositories ^:replace [["releases" "https://artifactory.i.hosaka.io/artifactory/libs-release"]
@@ -18,7 +18,9 @@
                  [clojure.java-time "0.3.2"]
 
                  [com.novemberain/langohr "5.0.0"]]
+  :uberjar-name "oscillator.jar"
   :main ^:skip-aot io.hosaka.oscillator
+  :jvm-opts ["-Xms128m" "-Xmx512m"]
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}
              :dev {:resource-paths ["env/dev/resources" "resources"]
