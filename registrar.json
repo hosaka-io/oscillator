@@ -1,0 +1,7 @@
+{
+    "id" : "fc4fc60f-04ec-4237-9911-825fa2564f76"
+    "parent": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+    "name": "oscillator",
+    "description": "Oscillator Service",
+    "entity_type": "service"
+}
